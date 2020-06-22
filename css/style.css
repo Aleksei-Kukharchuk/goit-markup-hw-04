@@ -1,0 +1,475 @@
+:root {
+  --primary-text-color: #757575;
+  --accent-color: #2196f3;
+  --tittle-color: #212121;
+  --second-tittle-color: #ffffff;
+  --second-tittle-background: rgba(47, 48, 58, 0.8);
+  --team-background: #f5f4fa;
+  --portfolio-p-color: rgba(33, 150, 243, 0.9);
+  --footer-background: #2f303a;
+  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --copyright-color: rgba(255, 255, 255, 0.4);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+
+  color: inherit;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.section-tittle {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.7;
+
+  color: var(--tittle-color);
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*Шапка сайта*/
+
+.logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.16;
+  font-weight: 700;
+
+  color: var(--accent-color);
+}
+
+.header__nav {
+  margin-left: 85px;
+}
+
+.header-nav__list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.header-nav-list__item {
+  margin-right: 50px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: var(--tittle-color);
+}
+
+.header-nav-list-item__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav-list__item:last-child {
+  margin-right: 0px;
+}
+
+.address {
+  display: flex;
+  margin-left: auto;
+
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  font-weight: 500;
+  font-style: normal;
+
+  color: var(--primary-text-color);
+}
+
+.adress_link {
+  margin-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Подвал сайта*/
+
+.footer {
+  background-color: var(--footer-background);
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav__logo-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+}
+
+.footer-nav__social {
+  margin-left: 69px;
+  margin-top: 66px;
+}
+
+.footer-nav__subscribe {
+  margin-left: 94px;
+  margin-top: 66px;
+}
+
+.footer-nav-social__list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.footer-logo {
+  padding: 0px;
+
+  font-size: 22px;
+  line-height: 1.19;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 28px;
+
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: var(--second-tittle-color);
+}
+
+.footer-address__text {
+  margin-top: 9px;
+}
+
+.footer-address__link {
+  margin-left: 0px;
+  margin-top: 9px;
+  padding: 0px;
+
+  color: var(--footer-address-color);
+}
+
+.footer-nav-social__tittle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+
+  color: var(--second-tittle-color);
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+
+  line-height: 2;
+
+  color: var(--copyright-color);
+}
+
+.copyright__text {
+  margin-bottom: 12px;
+  margin-top: 18px;
+}
+
+/*Блок "Закзать услугу"*/
+
+.order {
+  text-align: center;
+}
+
+.order_tittle {
+  margin-bottom: 30px;
+  margin-top: 0px;
+
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+
+  color: var(--second-tittle-color);
+}
+
+.button {
+  padding: 10px 32px;
+  border: none;
+
+  letter-spacing: 0.06em;
+  line-height: 1.9;
+  font-weight: 700;
+
+  background-color: var(--accent-color);
+  color: var(--second-tittle-color);
+}
+
+/*Блок "Преимуществ"*/
+
+.advantages-list-item__tittle {
+  margin-bottom: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--tittle-color);
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.advantages-list__item {
+  width: calc((100% - 90px) / 4);
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+.advantages-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list-item__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/*Блок "Чем мы занимаемся*/
+
+.activity-list__tittle {
+  margin-bottom: 0px;
+
+  text-align: center;
+
+  color: var(--second-tittle-color);
+  background-color: var(--second-tittle-background);
+}
+
+.activity__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.activity-list__item {
+  margin-bottom: 94px;
+
+  width: calc((100% - 60px) / 3);
+}
+
+.activity-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*Блок "Наша команда"*/
+
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+
+  background-color: var(--team-background);
+}
+
+.team__container {
+  padding-top: 94px;
+}
+
+.team-list-item__name {
+  font-size: 16px;
+  font-weight: 500;
+
+  color: var(--tittle-color);
+}
+
+.team__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.team-list__item {
+  width: calc((100% - 90px) / 4);
+  margin-bottom: 94px;
+
+  text-align: center;
+
+  background-color: var(--second-tittle-color);
+}
+
+.team-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-item__social {
+  display: flex;
+}
+
+/*Блок "Постоянные клиенты"*/
+
+.customers__container {
+  padding-top: 94px;
+}
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.customers-list__item {
+  width: calc((100% - 150px) / 6);
+  margin-bottom: 94px;
+}
+
+.customers-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*Меню фильтра для портфолио*/
+
+.portfolio__tittle {
+  opacity: 0;
+  margin: 0px;
+  height: 93px;
+}
+
+.portfolio__filter {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-filter__button {
+  padding-top: 6px;
+  padding-right: 21px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  margin-bottom: 50px;
+  border: none;
+
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.63;
+  font-weight: 500;
+
+  background-color: var(--team-background);
+  color: var(--tittle-color);
+}
+
+.portfolio-filter__button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio-filter__button:hover {
+  background-color: var(--accent-color);
+  color: var(--second-tittle-color);
+}
+
+/*Портфолио*/
+
+.projects-list-item__link {
+  display: block;
+}
+
+.projects-list-item__tittle {
+  margin-top: 20px;
+  margin-bottom: 0px;
+
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+
+  color: var(--tittle-color);
+}
+
+.projects-list-item__filter {
+  margin-top: 4px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 400;
+
+  color: var(--primary-text-color);
+}
+
+.projects-list-item__text {
+  margin: 0px;
+
+  font-size: 16px;
+  line-height: 1.56;
+
+  color: var(--second-tittle-color);
+  background-color: var(--portfolio-p-color);
+}
+
+.portfolio__projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.projects-list__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-list__item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.projects-list__item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
